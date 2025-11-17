@@ -1,0 +1,12 @@
+* Z:\home\dud\Desktop\ElectronicBasic\Duza Lib\examples\Bordodynov\Alternative_a_transformer\B_H_steel_.asc
+XU1 N003 0 P001 0 Winding N={N1} Rs=1m Tau=50n Tau2=50n
+I1 0 N003 PWL(0 1 1m 0 2m -0.5)
+XU2 0 P001 N001 N002 CORE Area=24u Len=32m ms=81.82k a=8.067 k=18.57 c=0.24753
+.tran 2m
+.param  N1=100
+.option  plotwinsize=0
+* Bulk magnetization curve (russian steel)
+* Scheme By Bordodynov
+.lib Core.lib
+.backanno
+.end
