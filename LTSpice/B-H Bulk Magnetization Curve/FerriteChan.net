@@ -1,0 +1,14 @@
+* Z:\home\dud\Desktop\ElectronicBasic\Duza Lib\examples\Bordodynov\Alternative_a_transformer\FerriteChan.asc
+I1 0 N001 SINE(0 5m 5k 0 -500)
+XU2 0 P001 H B CoreChan Area=24u Len=32m Hc=18 Br=0.1 BS=0.4
+XU1 N001 0 P001 0 Winding N={N1} Rs=1m Tau=50n Tau2=50n
+C1 N001 0 20p
+.tran 5m uic
+.param  N1=100
+.option  plotwinsize=0
+.param Area1=24u len1=32m
+* SINE(0 5m  5k 0 -500)
+* Scheme By Bordodynov
+.lib Core.lib
+.backanno
+.end
